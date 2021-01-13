@@ -1,0 +1,72 @@
+@import '../../assets/sass/variables/variables'
+@import '../../assets/sass/base/_mixin'
+
+.banner-separador
+    background-image: url(../../assets/img/stock-photo-law-legal-technology-concept-judge-gavel-on-computer-with-scales-of-justice-on-desk-of-lawyer-704923213.jpg)
+
+.img-contacto
+    display: none
+    +md
+        display: block
+        width: 20%
+        height: 400px
+        background-image: url(../../assets/img/stock-photo-ceo-owner-leader-company-staff-member-portrait-possibly-finance-accountant-attorney-manager-653651722.jpg)
+        background-position: -240px top 
+        background-size: cover
+        background-repeat: no-repeat
+
+
+.container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+
+    form
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        +md
+            width: 75%
+
+        .contact-label
+            width: 100%
+            padding-top: 20px
+            font-size: 20px
+            +md
+                width: 48%
+
+        input
+            border: none
+            border-bottom: 1px solid $c-secundario
+            width: 100%
+            font-size: 25px
+            margin-bottom: 30px
+            padding-top: 10px
+            padding-bottom: 5px
+
+        input:not(:empty)
+            background-color: red
+
+
+        .mensaje-label
+            width: 100%
+            padding-top: 20px
+            font-size: 20px
+
+            textarea
+                width: 100%
+                font-size: 18px
+                margin-top: 10px
+                padding: 10px
+
+        .btn-submit
+            border: 1px solid $c-principal
+            color: $c-principal
+            font-size: 20px
+            margin-top: 20px
+            background-color: white
+            margin-left: auto
+            padding: 10px 30px

@@ -1,0 +1,50 @@
+@import '../../assets/sass/variables/variables'
+@import '../../assets/sass/base/_mixin'
+
+header
+    // width: 100vw
+    height: 100vh
+    max-height: 600px
+    padding-top: 100px
+    padding-right: 30px
+    font-size: $f-normal
+    padding-left: 20px
+    position: relative
+    z-index: 50
+    +md
+        padding-top: 170px
+        background-image: url(../../assets/img/Header.jpg)
+        background-size: contain
+        background-position: rigth center
+        background-repeat: no-repeat
+        max-height: 100vh
+    +xxl
+        background-position: -170px center
+        background-size: auto 100%
+    h1
+        color: $c-secundario
+        font-size: $f-xbig
+        font-weight: 500
+        max-width: 90%
+        margin-bottom: 20px
+        +md
+            max-width: 40%
+            font-size: $f-xxbig
+            margin-bottom: 30px
+
+    p
+        color: $c-secundario
+        font-size: $f-small
+        line-height: 1.7
+        +md
+            max-width: 40%
+            font-size: $f-normal
+
+    button
+        margin-top: 30px
+
+    img
+        width: 100%
+        margin-top: 20px
+        +md
+            display: none

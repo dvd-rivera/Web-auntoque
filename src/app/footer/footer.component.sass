@@ -1,0 +1,103 @@
+@import '../../assets/sass/variables/variables'
+@import '../../assets/sass/base/_mixin'
+    
+footer
+    color: white
+    width: 100%
+    background-color: $c-secundario
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    padding: 40px 0
+    padding-bottom: 0
+
+    
+
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        +md
+            justify-content: space-between
+
+
+        .logo-container
+            width: 30%miClavedeBitbucket
+
+
+            img
+                width: 100%
+                max-width: 200px
+
+        .datos
+            width: 80%
+            display: flex
+            justify-content: center
+            text-align: center
+            margin-top: 20px
+            +md
+                margin-top: 0
+                width: 60%
+                justify-content: flex-end
+                text-align: left
+
+            ul
+                list-style-type: none
+                padding: 0
+                font-size: $f-xsmall
+                +md
+                    font-size: $f-small
+
+                li
+                    padding-bottom: 5px
+
+        .otros
+            width: 100%
+            +md
+                width: 50%
+            
+            ul
+                padding: 20px 0
+                list-style-type: none
+                display: flex
+
+            a
+                text-decoration: none
+                width: 33%
+
+                li
+                    padding-left: 20px
+                    color: white
+                    font-size: $f-xsmall
+                    text-align: center
+                    +md
+                        font-size: $f-small
+                
+
+        .redes ul
+            display: flex
+            align-items: center
+            padding: 0
+            list-style-type: none
+
+            li
+                margin-left: 10px
+
+    .container:first-child
+        border-bottom: solid 1px white
+        padding-bottom: 30px
+
+.legales
+    width: 100%
+
+    p
+        background-color: #0F141E
+        text-align: center
+        padding: 15px
+        font-size: $f-xsmall
+        margin-top: 20px
+        +md
+            padding: 20px
+            font-size: $f-small

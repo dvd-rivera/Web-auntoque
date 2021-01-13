@@ -1,0 +1,67 @@
+@import '../../assets/sass/variables/variables'
+@import '../../assets/sass/base/_mixin'
+    
+.banner-separador
+    margin-top: 50px
+    background-image: url(../../assets/img/stock-vector-labor-law-lawyer-attorney-at-law-legal-advice-concept-on-virtual-screen-internetlaw-and-1531857806.jpg)
+
+.container p
+    font-size: $f-small
+    color: $c-secundario
+    line-height: 1.5
+    margin-bottom: 50px
+    +md
+        font-size: $f-normal
+
+.description
+    margin-top: 50px
+    +md 
+        margin-top: 80px
+        font-size: $f-big
+
+.function-container
+    margin-bottom: 40px
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+    +md
+        margin-bottom: 80px
+
+    .video-container
+        width: 95%
+        +md
+            width: 48%
+
+    video
+        width: 100%
+        box-shadow: $shadow
+
+    .function-description-container
+        width: 95%
+        order: 2
+        +md
+            width: 48%
+            order: initial
+
+    .function-tittle
+        display: none
+        font-size: $f-xbig
+        margin-bottom: 10px
+        font-weight: 500
+        +md
+            display: inline-block
+
+    .function-tittle.mobile
+        display: inline-block
+        margin-bottom: 10px
+        +md
+            display: none
+
+    .function-description
+        font-size: $f-normal
+        line-height: 1.3
+        margin-top: 10px
+        +md
+            font-size: $f-big
+            line-height: 1.7
