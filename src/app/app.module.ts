@@ -9,7 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { QueEsComponent } from './QueEs/quees.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
-import { Footer2Component } from './footer2/footer2.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { Footer2Component } from './footer2/footer2.component';
     HeaderComponent,
     QueEsComponent,
     ContactoComponent,
-    FooterComponent,
-    Footer2Component
+    FooterComponent
   ],
   imports: [
     BrowserModule,
