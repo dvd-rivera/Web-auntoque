@@ -11,6 +11,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
 import { FAQsComponent } from './faqs/faqs.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AccordeonComponent } from './accordeon/accordeon.component';
 
 
 const appRoutes: Routes = [
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     QueEsComponent,
     ContactoComponent,
     FooterComponent,
-    FAQsComponent
+    FAQsComponent,
+    AccordeonComponent
   ],
   imports: [
     BrowserModule,
