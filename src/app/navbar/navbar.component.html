@@ -1,6 +1,6 @@
 <nav id="nav">
     <div class="container">
-        <div class="logo-container">
+        <div routerLink="/home" class="logo-container">
             <img src="assets/img/Logo_a_un_toque.svg" alt="">
         </div>
         <button class="navbar-toggler" (click)="abrirmenu()">
@@ -9,7 +9,8 @@
             </span>
         </button>
         <ul class="menu-items">
-            <a class="" href=""><li> Servicio</li></a>
+            <a href="#queEs"><li> ¿Qué es a un toque? </li></a>
+            <a href="" routerLink="/faqs"><li> Preguntas frecuentes </li></a>
             <a href=""><li>Soporte</li></a>
         </ul>
         <a class="btn-demo" href="#">

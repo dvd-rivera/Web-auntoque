@@ -9,6 +9,15 @@ import { HeaderComponent } from './header/header.component';
 import { QueEsComponent } from './QueEs/quees.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
+import { FAQsComponent } from './faqs/faqs.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'faqs', component: FAQsComponent },
+]
 
 @NgModule({
   declarations: [
@@ -18,13 +27,15 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     QueEsComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    FAQsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
