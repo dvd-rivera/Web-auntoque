@@ -14,7 +14,8 @@ export class AccordeonComponent implements OnInit {
     this.preguntas = [
       {
         pregunta: "¿Cómo funciona la licencia de auntoque?",
-        respuesta: "Nuestros planes de licencia tiene un cobro anual que parte desde los {{PRECIO}}, los que contemplan instalación del sistema, soporte técnico y capacitación para el personal a cargo.<br/><br/>Para más detalles de los planes, revise la sección Planes."
+        respuesta: "Nuestros planes de licencia tiene un cobro anual que parte desde los {{PRECIO}}, los que contemplan instalación del sistema, soporte técnico y capacitación para el personal a cargo.",
+        respuesta2: "Para más detalles de los planes, revise la sección Planes."
       },
       {
         pregunta: "¿Los planes contratado se renuevan automáticamente?",
@@ -35,10 +36,27 @@ export class AccordeonComponent implements OnInit {
     ]
   }
 
+  
 
   ngOnInit(): void {
+    
   }
 
+  ngAfterViewInit() {
+	const acc = document.getElementsByClassName("pregunta-container");
+	let i;
 
-
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function(this: any) {
+		this.classList.toggle("active");
+		
+        var panel: any = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+		panel.style.maxHeight = null;
+		} else {
+		panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+		});
+    }
+  	}
 }

@@ -1,5 +1,12 @@
 <div class="container">
-    <div *ngFor="let pregunta of preguntas" >
-        {{pregunta.pregunta}}{{pregunta.respuesta}} <br>
+    <div *ngFor="let pregunta of preguntas">
+        <div class="pregunta-container">
+            {{pregunta.pregunta}}
+        </div>
+        <div class="respuesta-container">
+            {{pregunta.respuesta}}
+            <br><br>
+            {{pregunta.respuesta2}}
+        </div>
     </div>
 </div>

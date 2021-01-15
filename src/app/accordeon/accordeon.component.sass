@@ -1,0 +1,23 @@
+@import '../../assets/sass/variables/variables'
+@import '../../assets/sass/base/_mixin'
+    
+.pregunta-container
+    font-size: $f-normal
+    cursor: pointer
+    +md
+        font-size: $f-big
+
+.respuesta-container
+    background-color: white
+    max-height: 0
+    margin-bottom: 20px
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    font-size: $f-small
+    padding-top: 10px
+    +md
+        font-size: $f-normal
+
+.container
+    margin-bottom: 100px
+    padding: 0 40px
