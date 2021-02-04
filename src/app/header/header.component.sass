@@ -6,45 +6,41 @@ header
     height: 100vh
     max-height: 600px
     padding-top: 100px
-    padding-right: 30px
-    font-size: $f-normal
     padding-left: 20px
+    font-size: $f-normal
     position: relative
     z-index: 50
+    clip-path: ellipse(190% 65% at 40% 32%)
+    background-image: url(../../assets/img/imagen_de_portada.jpg)
+    background-size: cover
+    background-position: right center
+    background-repeat: no-repeat
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8)
     +md
-        padding-top: 170px
-        background-image: url(../../assets/img/Header.jpg)
-        background-size: contain
-        background-position: rigth center
-        background-repeat: no-repeat
+        padding: 170px 30px 0 150px
         max-height: 100vh
-    +xxl
-        background-position: -170px center
-        background-size: auto 100%
+        clip-path: ellipse(120% 55% at 30% 32%)
     h1
-        color: $c-secundario
+        color: white
         font-size: $f-xbig
-        font-weight: 500
+        font-weight: 700
         max-width: 90%
-        margin-bottom: 20px
+        margin-bottom: 10px
         +md
             max-width: 40%
             font-size: $f-xxbig
             margin-bottom: 30px
 
     p
-        color: $c-secundario
+        color: white
         font-size: $f-small
         line-height: 1.7
         +md
             max-width: 40%
             font-size: $f-normal
 
+        &.bajada
+            font-size: 1.5rem
+
     button
         margin-top: 30px
-
-    img
-        width: 100%
-        margin-top: 20px
-        +md
-            display: none

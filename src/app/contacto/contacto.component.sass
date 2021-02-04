@@ -1,72 +1,109 @@
 @import '../../assets/sass/variables/variables'
 @import '../../assets/sass/base/_mixin'
 
-.banner-separador
-    background-image: url(../../assets/img/stock-photo-law-legal-technology-concept-judge-gavel-on-computer-with-scales-of-justice-on-desk-of-lawyer-704923213.jpg)
-
-.img-contacto
-    display: none
+h2
+    margin-top: 100px
     +md
-        display: block
-        width: 20%
-        height: 400px
-        background-image: url(../../assets/img/stock-photo-ceo-owner-leader-company-staff-member-portrait-possibly-finance-accountant-attorney-manager-653651722.jpg)
-        background-position: -240px top 
-        background-size: cover
-        background-repeat: no-repeat
+        margin-top: 150px
 
+.contacto-img-container
+    width: 80%
+    margin: 0 auto
+    text-align: center
 
-.container
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-bottom: 50px
-
-    form
+    .contacto-img
         width: 100%
-        display: flex
-        align-items: center
-        justify-content: space-between
-        flex-wrap: wrap
+        max-width: 500px
+
+.formularios-container
+    display: flex
+    flex-wrap: wrap
+
+    .container-contacto-1
+        background: rgb(0,144,223)
+        background: linear-gradient(180deg, rgba(0,144,223,1) 0%, rgba(99,169,207,1) 100%)
+        padding: 40px 20px
+        color: white
         +md
-            width: 75%
+            width: 70%
+            padding: 80px 150px
+            display: flex
+            justify-content: flex-end
 
-        .contact-label
+        form
             width: 100%
-            padding-top: 20px
-            font-size: 20px
+            display: flex
+            align-items: start
+            justify-content: space-between
+            flex-wrap: wrap
             +md
-                width: 48%
+                width: 90%
 
-        input
-            border: none
-            border-bottom: 1px solid $c-secundario
-            width: 100%
-            font-size: 25px
-            margin-bottom: 30px
-            padding-top: 10px
-            padding-bottom: 5px
-
-        input:not(:empty)
-            background-color: red
-
-
-        .mensaje-label
-            width: 100%
-            padding-top: 20px
-            font-size: 20px
-
-            textarea
+            .contact-label
                 width: 100%
-                font-size: 18px
-                margin-top: 10px
-                padding: 10px
+                padding-top: 20px
+                font-size: 20px
+                +md
+                    width: 48%
 
-        .btn-submit
-            border: 1px solid $c-principal
-            color: $c-principal
-            font-size: 20px
-            margin-top: 20px
-            background-color: white
-            margin-left: auto
-            padding: 10px 30px
+            input
+                background-color: rgba(0, 0, 0, 0)
+                border: none
+                border-bottom: 1px solid white
+                width: 100%
+                font-size: 25px
+                margin-bottom: 30px
+                padding-top: 10px
+                padding-bottom: 5px
+
+            input:not(:empty)
+                background-color: red
+
+
+            .mensaje-label
+                width: 100%
+                padding-top: 20px
+                font-size: 20px
+
+                textarea
+                    width: 100%
+                    font-size: 18px
+                    margin-top: 10px
+                    padding: 10px
+                    border: none
+
+            .btn-submit
+                border: 1px solid $c-principal
+                color: $c-principal
+                font-size: 20px
+                margin-top: 20px
+                background-color: white
+                margin-left: auto
+                padding: 10px 30px
+
+    .container-contacto-2
+        width: 100%
+        color: white
+        padding: 40px 20px
+        background: rgb(68,133,184)
+        background: linear-gradient(0deg, rgba(68,133,184,1) 0%, rgba(0,95,171,1) 100%)
+        +md
+            width: 30%
+            padding: 80px 40px
+
+        ul
+            list-style-type: none
+
+            i
+                font-size: 1.8rem
+                margin-right: 20px
+
+            li
+                margin-bottom: 50px
+                font-size: 1.5rem
+
+h3
+    font-size: 2rem
+    color: white
+    width: 100%
+    padding-bottom: 50px

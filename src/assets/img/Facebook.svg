@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36.8" viewBox="0 0 35 36.8">
-  <g id="Grupo_52" data-name="Grupo 52" transform="translate(-1072 -4144)">
-    <circle id="Elipse_2" data-name="Elipse 2" cx="17.5" cy="17.5" r="17.5" transform="translate(1072 4144)" fill="#fff"/>
-    <path id="facebook-f-brands" d="M38.3,17.325l.855-5.574H33.812V8.134c0-1.525.747-3.011,3.143-3.011h2.431V.377A29.651,29.651,0,0,0,35.07,0c-4.4,0-7.284,2.67-7.284,7.5v4.248h-4.9v5.574h4.9V30.8h6.026V17.325Z" transform="translate(1058.11 4150)" fill="#1b2437"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36.8" viewBox="0 0 35 36.8"><g transform="translate(-1072 -4144)"><circle cx="17.5" cy="17.5" r="17.5" transform="translate(1072 4144)" fill="#fff"/><path d="M38.3,17.325l.855-5.574H33.812V8.134c0-1.525.747-3.011,3.143-3.011h2.431V.377A29.651,29.651,0,0,0,35.07,0c-4.4,0-7.284,2.67-7.284,7.5v4.248h-4.9v5.574h4.9V30.8h6.026V17.325Z" transform="translate(1058.11 4150)" fill="#005fab"/></g></svg>
