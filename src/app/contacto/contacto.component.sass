@@ -2,9 +2,9 @@
 @import '../../assets/sass/base/_mixin'
 
 h2
-    margin-top: 100px
+    padding-top: 20px
     +md
-        margin-top: 150px
+        padding-top: 80px
 
 .contacto-img-container
     width: 80%
@@ -73,15 +73,20 @@ h2
                     border: none
 
             .btn-submit
-                border: 1px solid $c-principal
-                color: $c-principal
+                border: 1px solid white
+                border-radius: 50px
+                color: white
                 font-size: 20px
                 margin-top: 20px
-                background-color: white
+                background-color: rgba(0, 0, 0, 0)
                 margin-left: auto
-                padding: 10px 30px
+                padding: 10px 60px
+                transition: background-color 0.3s ease
+                &:hover
+                    background-color: $c-principal
 
-    .container-contacto-2
+
+    .container-contacto-2 
         width: 100%
         color: white
         padding: 40px 20px
@@ -95,8 +100,8 @@ h2
             list-style-type: none
 
             i
-                font-size: 1.8rem
-                margin-right: 20px
+                font-size: 2rem
+                margin-bottom: 10px
 
             li
                 margin-bottom: 50px

@@ -13,34 +13,39 @@ header
     clip-path: ellipse(190% 65% at 40% 32%)
     background-image: url(../../assets/img/imagen_de_portada.jpg)
     background-size: cover
-    background-position: right center
+    background-position: center
     background-repeat: no-repeat
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8)
     +md
+        background-position: right center
         padding: 170px 30px 0 150px
         max-height: 100vh
-        clip-path: ellipse(120% 55% at 30% 32%)
+        clip-path: ellipse(100% 50% at 35% 40%)
+
     h1
         color: white
-        font-size: $f-xbig
+        font-size: $f-xxbig
         font-weight: 700
         max-width: 90%
         margin-bottom: 10px
         +md
-            max-width: 40%
-            font-size: $f-xxbig
-            margin-bottom: 30px
+            font-size: $f-xxxbig
+        +xl
+            font-size: 55px
 
     p
         color: white
-        font-size: $f-small
+        font-size: $f-normal
         line-height: 1.7
+        font-weight: 700
         +md
-            max-width: 40%
-            font-size: $f-normal
-
+            max-width: 60%
+            font-size: $f-xbig
+        +xl
+            font-size: $f-xxbig
+            
         &.bajada
-            font-size: 1.5rem
+            font-size: $f-big
+            font-weight: 500
 
     button
         margin-top: 30px

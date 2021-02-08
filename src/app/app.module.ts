@@ -12,12 +12,14 @@ import { FooterComponent } from './footer/footer.component';
 import { FAQsComponent } from './faqs/faqs.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AccordeonComponent } from './accordeon/accordeon.component';
+import { SomosComponent } from './somos/somos.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'faqs', component: FAQsComponent },
+  { path: 'Quienes-Somos', component: SomosComponent },
 ]
 
 @NgModule({
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     ContactoComponent,
     FooterComponent,
     FAQsComponent,
-    AccordeonComponent
+    AccordeonComponent,
+    SomosComponent
   ],
   imports: [
     BrowserModule,

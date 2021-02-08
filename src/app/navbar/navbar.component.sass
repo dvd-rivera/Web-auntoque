@@ -27,6 +27,10 @@ nav
             padding-top: 7px
             padding-bottom: 3px
             cursor: pointer
+            width: 180px
+
+            img
+                width: 100%
 
         ul.menu-items
             width: 100%
@@ -57,15 +61,17 @@ nav
                 +md
                     margin-top: 0
                     padding-left: 40px
+                    padding-bottom: 0
 
             
             a
                 text-decoration: none
                 color: $c-secundario
                 font-size: $f-small
-                &:last-child
-                    margin-top: 10px
-                    padding-bottom: 10px
+                padding-bottom: 10px
+                +md
+                    padding-bottom: 0
+
 
 .navbar-toggler
     width: 40px
