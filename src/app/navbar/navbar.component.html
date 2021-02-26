@@ -13,8 +13,25 @@
             <a href="#contacto" class="nav-contacto nav-item"><li> Contacto </li></a>
             <a class="nav-ayuda nav-item"><li>Ayuda Técnica</li></a>
         </ul>
-        <a class="btn-demo" href="#">
-            <button class="btn-md btn-call">Iniciar Sesión</button>
-        </a>
+        <div class="btn-demo">
+            <button (click)="abrirLogin()" class="btn-md  btn-call">Iniciar Sesión</button>
+            <div id="form-login-container" class="login-container">
+                <h5>Iniciar Sesión</h5>
+                <p class="error">Usuario y/o Contraseña incorrecta</p>
+                <form action="">
+                    <label for="user">
+                        Usuario
+                        <input id="user" class="login-input" type="text">
+                    </label>
+                    <label for="password">
+                        Contraseña
+                        <input id="password" class="login-input" type="password">
+                    </label>
+                </form>
+                <button (click)="errorLogin()">Ingresar</button>
+            </div>
+    
+        </div>
     </div>
+
 </nav>

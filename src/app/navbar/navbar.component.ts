@@ -24,7 +24,6 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       navItem.addEventListener("click", cerrarMenu);
     }) 
     
-    
   }
 
 
@@ -33,8 +32,20 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     nav?.classList.toggle("navAbierto")
   }
 
-  
+  abrirLogin() {
+    const formLoginCont :any = document.getElementById('form-login-container')
 
-  
+    formLoginCont?.classList.toggle('mostrar');
+  }
+
+  errorLogin() {
+    const inputs = document.querySelectorAll('.login-container form input')
+    inputs.forEach(input => {
+      input.classList.add('error')
+    })
+  }
+
+
+
 
 }
