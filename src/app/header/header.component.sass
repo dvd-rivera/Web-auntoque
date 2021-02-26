@@ -3,49 +3,68 @@
 
 header
     // width: 100vw
-    height: 100vh
+    height: auto
     max-height: 600px
+    min-height: 500px
     padding-top: 100px
-    padding-left: 20px
-    font-size: $f-normal
-    position: relative
-    z-index: 50
-    clip-path: ellipse(190% 65% at 40% 32%)
+    padding-bottom: 50px
     background-image: url(../../assets/img/imagen_de_portada.jpg)
+    z-index: 50
+    position: relative
+    clip-path: ellipse(190% 65% at 40% 32%)
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    +sm
+        padding-left: 20px
+        height: 100vh
+        clip-path: ellipse(190% 65% at 40% 32%)
     +md
+        background-position: center
+        padding: 120px 30px 0 50px
+        max-height: 800px
+        clip-path: ellipse(190% 65% at 40% 32%)
+    +lg
         background-position: right center
-        padding: 170px 30px 0 150px
-        max-height: 100vh
         clip-path: ellipse(100% 50% at 35% 40%)
 
-    h1
+    
+
+    h1  
         color: white
-        font-size: $f-xxbig
         font-weight: 700
         max-width: 90%
         margin-bottom: 10px
+        font-size: $f-xbig
+        +sm
+            font-size: $f-xxbig
         +md
             font-size: $f-xxxbig
         +xl
             font-size: 55px
 
-    p
+    p   
         color: white
-        font-size: $f-normal
         line-height: 1.7
         font-weight: 700
+        font-size: $f-small
+        +sm
+            font-size: $f-normal
         +md
-            max-width: 60%
-            font-size: $f-xbig
+            max-width: 70%
+            font-size: $f-big
         +xl
+            max-width: 60%
             font-size: $f-xxbig
             
         &.bajada
-            font-size: $f-big
+            font-size: $f-normal
             font-weight: 500
+            +sm
+                padding-right: 20px
+            +md
+                font-size: $f-big
+                padding: 0
 
     button
         margin-top: 30px

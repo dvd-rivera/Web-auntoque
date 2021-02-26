@@ -1,6 +1,6 @@
 <nav id="nav">
     <div class="container">
-        <div routerLink="/home" class="logo-container">
+        <div routerLink="/home" class="logo-container nav-item">
             <img src="assets/img/Logo_a_un_toque.svg" alt="">
         </div>
         <button class="navbar-toggler" (click)="abrirmenu()">
@@ -9,9 +9,9 @@
             </span>
         </button>
         <ul class="menu-items">
-            <a routerLink="/Quienes-Somos"><li> Quienes Somos </li></a>
-            <a href="#contacto"><li> Contacto </li></a>
-            <a><li>Ayuda Técnica</li></a>
+            <a routerLink="/Quienes-Somos" class="nav-somos nav-item"><li> Quienes Somos </li></a>
+            <a href="#contacto" class="nav-contacto nav-item"><li> Contacto </li></a>
+            <a class="nav-ayuda nav-item"><li>Ayuda Técnica</li></a>
         </ul>
         <a class="btn-demo" href="#">
             <button class="btn-md btn-call">Iniciar Sesión</button>

@@ -3,8 +3,11 @@
 
 h2
     padding-top: 20px
+    color: $c-azulOscuro
+    font-size: $f-xxbig
     +md
         padding-top: 80px
+        font-size: $f-xxxbig
 
 .contacto-img-container
     width: 80%
@@ -25,8 +28,13 @@ h2
         padding: 40px 20px
         color: white
         +md
+            display: flex
+            justify-content: center
+        +lg
             width: 70%
             padding: 80px 150px
+            padding-left: 40px
+            padding-right: 40px
             display: flex
             justify-content: flex-end
 
@@ -71,6 +79,7 @@ h2
                     margin-top: 10px
                     padding: 10px
                     border: none
+                    resize: none
 
             .btn-submit
                 border: 1px solid white
@@ -92,12 +101,19 @@ h2
         padding: 40px 20px
         background: rgb(68,133,184)
         background: linear-gradient(0deg, rgba(68,133,184,1) 0%, rgba(0,95,171,1) 100%)
-        +md
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        +lg
             width: 30%
             padding: 80px 40px
 
+        h3
+            text-align: center
+
         ul
             list-style-type: none
+            text-align: center
 
             i
                 font-size: 2rem
@@ -112,3 +128,6 @@ h3
     color: white
     width: 100%
     padding-bottom: 50px
+    text-align: center
+    +lg
+        text-align: left

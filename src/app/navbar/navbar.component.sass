@@ -40,8 +40,10 @@ nav
             flex-direction: column
             margin-right: auto
             padding: 5px 0
+            padding-bottom: 10px
             list-style-type: none
-            +md
+            +lg 
+                padding-bottom: 0
                 display: flex
                 width: auto
                 flex-direction: row
@@ -51,14 +53,16 @@ nav
             li
                 padding-left: 0
                 margin-top: 20px
-                +md
+                +lg
                     margin-top: 0
                     padding-left: 40px
 
             li:first-child
                 padding-left: 0
                 margin-top: 5px
-                +md
+                +sm
+                    margin-top: 10px
+                +lg
                     margin-top: 0
                     padding-left: 40px
                     padding-bottom: 0
@@ -72,6 +76,17 @@ nav
                 +md
                     padding-bottom: 0
 
+            .nav-somos
+                color: $c-morado
+
+            .nav-contacto
+                color: $c-azulOscuro
+
+        .btn-demo
+            display: none
+            +lg
+                display: block
+
 
 .navbar-toggler
     width: 40px
@@ -79,7 +94,7 @@ nav
     border: none
     background-color: rgba(220, 220, 220, 1)
     font-size: 1.3rem
-    +md
+    +lg
         display: none
 
 .navAbierto

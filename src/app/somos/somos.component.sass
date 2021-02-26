@@ -2,8 +2,13 @@
 @import '../../assets/sass/base/_mixin'
     
 .header-somos
+    // width: 100vw
     height: auto
+    max-height: 600px
+    min-height: 500px
     padding-top: 100px
+    padding-right: 15px
+    padding-left: 0
     font-size: $f-normal
     position: relative
     z-index: 50
@@ -12,31 +17,48 @@
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    +sm
+        padding-left: 20px
+        height: 100vh
+        clip-path: ellipse(190% 65% at 40% 32%)
     +md
-        max-height: 100vh
-        clip-path: ellipse(120% 68% at 30% 32%)
+        background-position: center
+        padding: 120px 30px 0 50px
+        max-height: 800px
+        clip-path: ellipse(190% 65% at 40% 32%)
+    +lg
+        background-position: center
+        clip-path: ellipse(100% 50% at 35% 40%)
+    
 
     .container
         display: flex
-        justify-content: center
+        justify-content: left
         flex-wrap: wrap
 
         h2
             color: white
             width: 100%
+            text-align: left
+            margin-left: 0
+            margin-top: 0
+            margin-right: 0
+            +md
+                margin-right: auto
 
         p
-            text-align: center
             color: white
             line-height: 1.4
+            font-size: $f-small
             +md
                 max-width: 65%
-                margin: 0 auto
-                margin-top: 50px
+                margin: 20px auto 0 0
+                line-height: 1.6
+                font-size: $f-normal
+            +xl
+                font-size: $f-big
 
-        .iso-container
+        .span-img
             width: 100%
-            display: flex
-            justify-content: center
-            padding-top: 50px
-            padding-bottom: 40px
+            text-align: center
+            margin-top: 30px
