@@ -12,6 +12,7 @@ header
     z-index: 50
     position: relative
     clip-path: ellipse(190% 65% at 40% 32%)
+    background-image: url(../../assets/img/imagen_de_portada.png)
     background-size: cover
     background-position: center
     background-repeat: no-repeat
@@ -34,10 +35,12 @@ header
         color: white
         font-weight: 700
         max-width: 90%
-        margin-bottom: 10px
-        font-size: $f-xbig
-        +sm
-            font-size: $f-xxbig
+        margin-bottom: 35px
+        padding-bottom: 15px
+        background-image: url(../../assets/img/puntos__tricolor.png)
+        background-position: bottom right
+        background-repeat: no-repeat
+        display: inline-block
         +md
             font-size: $f-xxxbig
         +xl
@@ -46,10 +49,7 @@ header
     p   
         color: white
         line-height: 1.7
-        font-weight: 700
-        font-size: $f-small
-        +sm
-            font-size: $f-normal
+        font-weight: 200
         +md
             max-width: 70%
             font-size: $f-big
@@ -58,13 +58,12 @@ header
             font-size: $f-xxbig
             
         &.bajada
-            font-size: $f-normal
-            font-weight: 500
-            +sm
-                padding-right: 20px
-            +md
-                font-size: $f-big
-                padding: 0
+            font-size: $f-xbig
+            font-weight: 200
+            line-height: normal
 
     button
         margin-top: 30px
+
+    .separador__sup
+        margin-top: 30px 
