@@ -7,6 +7,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
@@ -40,12 +41,13 @@ export class NavbarComponent implements OnInit, AfterViewInit {
 
   errorLogin() {
     const inputs = document.querySelectorAll('.login-container form input')
+    const mensajeError = document.querySelectorAll('.login-container p')
+
     inputs.forEach(input => {
       input.classList.add('error')
     })
+
+    mensajeError.forEach(mensaje =>
+      mensaje.classList.add('mostrar'))
   }
-
-
-
-
 }

@@ -38,18 +38,28 @@ header
         margin-bottom: 35px
         padding-bottom: 15px
         background-image: url(../../assets/img/puntos__tricolor.png)
-        background-position: bottom right
+        background-position: 170px bottom
+        background-size: 30px
         background-repeat: no-repeat
         display: inline-block
         +md
             font-size: $f-xxxbig
+            background-size: auto
+            background-position: 240px bottom
+
+        +lg
+            background-position: 650px bottom
+
         +xl
             font-size: 55px
+            background-position: bottom right
+            background-size: auto
 
     p   
         color: white
         line-height: 1.7
         font-weight: 200
+        font-size: $f-normal
         +md
             max-width: 70%
             font-size: $f-big

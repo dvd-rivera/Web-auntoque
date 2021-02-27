@@ -1,0 +1,21 @@
+<div class="ayuda-login-container">
+    <h2>Bienvenido a la sección de ayuda técnica de auntoque</h2>
+    <p class="bajada">Ingresa para revisar nuestra documentación y videos de la capacitación.</p>
+
+    <div id="form-login-container" class="login-container">
+        <h5>Iniciar Sesión</h5>
+        <p class="error">Usuario y/o Contraseña incorrecta</p>
+        <form action="">
+            <label for="user">
+                Usuario
+                <input id="user" class="login-input" type="text">
+            </label>
+            <label for="password">
+                Contraseña
+                <input id="password" class="login-input" type="password">
+            </label>
+        </form>
+        <button (click)="errorLogin()">Ingresar</button>
+    </div>
+    <img src="/assets/img/ISOTIPO-auntoque.svg" alt="">
+</div>

@@ -11,7 +11,7 @@
         <ul class="menu-items">
             <a routerLink="/Quienes-Somos" class="nav-somos nav-item"><li> Quienes Somos </li></a>
             <a href="#contacto" class="nav-contacto nav-item"><li> Contacto </li></a>
-            <a class="nav-ayuda nav-item"><li>Ayuda Técnica</li></a>
+            <a routerLink="/Ayuda-Tecnica" class="nav-ayuda nav-item" ><li>Ayuda Técnica</li></a>
         </ul>
         <div class="btn-demo">
             <button (click)="abrirLogin()" class="btn-md  btn-call">Iniciar Sesión</button>
@@ -30,7 +30,6 @@
                 </form>
                 <button (click)="errorLogin()">Ingresar</button>
             </div>
-    
         </div>
     </div>
 

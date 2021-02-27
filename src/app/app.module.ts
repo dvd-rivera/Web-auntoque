@@ -10,9 +10,15 @@ import { QueEsComponent } from './QueEs/quees.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
 import { FAQsComponent } from './faqs/faqs.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { AccordeonComponent } from './accordeon/accordeon.component';
 import { SomosComponent } from './somos/somos.component';
+import { LoginAyudaComponent } from './login-ayuda/login-ayuda.component';
+
+const routerOptions: ExtraOptions = {
+  anchorScrolling: "enabled",
+  scrollPositionRestoration: 'enabled'
+}
 
 
 const appRoutes: Routes = [
@@ -20,6 +26,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'faqs', component: FAQsComponent },
   { path: 'Quienes-Somos', component: SomosComponent },
+  { path: 'Ayuda-Tecnica', component: LoginAyudaComponent },
 ]
 
 @NgModule({
@@ -33,12 +40,13 @@ const appRoutes: Routes = [
     FooterComponent,
     FAQsComponent,
     AccordeonComponent,
-    SomosComponent
+    SomosComponent,
+    LoginAyudaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, routerOptions)
   ],
   providers: [],
   bootstrap: [AppComponent]
